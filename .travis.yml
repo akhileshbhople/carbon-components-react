@@ -30,13 +30,13 @@ after_success:
 before_deploy:
   - yarn build-storybook
 
-deploy:
-  skip_cleanup: true
-  provider: cloudfoundry
-  username: apikey
-  password: $CLOUD_API_KEY
-  api: https://api.ng.bluemix.net
-  organization: carbon-design-system
-  space: production
-  on:
-    branch: master
+#deploy:
+#  skip_cleanup: true
+#  provider: cloudfoundry
+#  username: apikey
+#  password: $CLOUD_API_KEY
+#  api: https://api.ng.bluemix.net
+#  organization: carbon-design-system
+#  space: production
+#  on:
+#    branch: master
